@@ -1,8 +1,8 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use SSYT\Support\PageContent;
 use SSYT\Auth\AuthController;
+
 $auth = new AuthController();
 
 if($_SERVER['REQUEST_METHOD'] == "POST")

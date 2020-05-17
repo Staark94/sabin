@@ -1,9 +1,23 @@
 <?php
     require_once 'vendor/autoload.php';
 
-    use SSYT\Support\PageContent;
     use SSYT\Auth\AuthController;
+    use SSYT\Support\{PageContent, PageSubmit};
+    use SSYT\Models\User;
+    use SSYT\Models\PlayerList;
+
+    $app = new PlayerList();
     $auth = new AuthController();
+    $router = new PageSubmit();
+    $user = new User();
+
+    $router->get('action', function () use ($user) {
+        $user->addPlayer(['post' => $_REQUEST]);
+    });
+
+    $router->get('delete', function () use ($user) {
+        return $user->removePlayer($_REQUEST['delete']);
+    });
 ?>
 
 <!doctype html>

@@ -27,8 +27,10 @@ class ComposerStaticInit727b961ec101d404d9ead0319207d6c3
     public static $classMap = array (
         'SSYT\\Auth\\AuthController' => __DIR__ . '/../..' . '/src/Auth/AuthController.php',
         'SSYT\\Models\\PlayerList' => __DIR__ . '/../..' . '/src/Models/PlayerList.php',
+        'SSYT\\Models\\User' => __DIR__ . '/../..' . '/src/Models/User.php',
         'SSYT\\Support\\Database' => __DIR__ . '/../..' . '/src/Support/Database.php',
         'SSYT\\Support\\PageContent' => __DIR__ . '/../..' . '/src/Support/PageContent.php',
+        'SSYT\\Support\\PageSubmit' => __DIR__ . '/../..' . '/src/Support/PageSubmit.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

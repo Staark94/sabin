@@ -1,6 +1,5 @@
 <?php
-    use SSYT\Models\PlayerList;
-    $app = new PlayerList();
+    global $app, $auth;
 ?>
 <table class="table table-dark mt-5" padding="0" cellpadding="0" border="0" cellspacing="0">
     <thead>
@@ -25,7 +24,11 @@
                 <td><?=$item->admin;?></td>
                 <td><?=$item->motiv;?></td>
                 <td><?=$item->durata;?></td>
-                <td></td>
+                <td>
+                    <?php if($auth->getAdmin()):?>
+                        <a class="btn btn-sm btn-warning text-white" href="index.php?delete=<?=$item->id;?>">Sterge</a>
+                    <?php endif; ?>
+                </td>
             </tr>
         <?php endforeach; ?>
     </tbody>

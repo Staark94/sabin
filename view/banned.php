@@ -1,12 +1,12 @@
 <?php
-    global $auth;
+    global $auth, $router;
     if($auth->getAdmin() != true) {
         header("Location: index.php?sid" . session_id());
     }
 ?>
 
 <h1>Adauga jucator banat</h1>
-<form method="post" class="form row" action="index.php?action=add" style="width: 800px">
+<form method="post" class="form row" action="index.php?action=addPlayer" style="width: 800px">
     <div class="form-group col-md-4">
         <label for="jucator">Jucator</label>
         <input type="text" name="player" class="form-control" id="jucator" placeholder="Nume Jucator">
