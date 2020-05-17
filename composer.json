@@ -1,0 +1,27 @@
+{
+    "name": "ssyt/counter-strike",
+    "description": "Online Panel for add banned users of your Counter-Strike Server",
+    "authors": [
+        {
+            "name": "Costin Ionut",
+            "email": "ionuzcostin@gmail.com",
+            "homepage": "http://www.procms.ro",
+            "role": "Developer"
+        }
+    ],
+
+    "license": "MIT",
+    "require": {
+        "php" : "^5.5 || ^7.0",
+        "ext-mbstring": "*"
+    },
+
+    "autoload": {
+        "files": [
+            "bootstrap.php"
+        ],
+        "psr-4": {
+            "SSYT\\": "src/"
+        }
+    }
+}

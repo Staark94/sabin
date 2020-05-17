@@ -1,0 +1,281 @@
+body{
+    background-image: url(https://i.servimg.com/u/f72/12/12/58/19/body11.gif);
+    color: #fff;
+    font-family: 'Play', serif;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+
+table.table-dark{
+    background: none;
+    border: none;
+    width: 96%;
+    color: #fff;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.table.table-dark td{
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+table.table-dark tr{
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/conten12.png)!important;
+    background-repeat: repeat-y!important;
+
+}
+
+table.table-dark thead th{
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/mainti13.png);
+    background-repeat: no-repeat;
+    color: #fff;
+    line-height: 34px;
+    padding: 10px;
+}
+
+table.table-dark tr.info{
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/th10.png)!important;
+    background-repeat: no-repeat!important;
+    color: #95c24b!important;
+    font-weight: 600;
+    line-height: 28px;
+
+}
+
+tbody.end tr td{
+
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/tfoot310.png);
+    background-repeat: no-repeat;
+    width: 100%!important;
+    text-align: center;
+    line-height: 30px;
+
+
+}
+
+
+.jucator:before, .admin:before, .motiv:before, .durata:before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    float: left;
+    background-size: cover;
+    margin: 0px 2px;
+}
+
+.jucator:before{
+    background: url(http://icons.iconarchive.com/icons/kyo-tux/phuzion/16/Sign-Stop-icon.png);
+
+}
+.admin:before{
+    background: url(http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/16/man-icon.png);
+
+}
+
+
+.motiv:before{
+    background: url(http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-10/16/Pencil-icon.png);
+}
+
+.durata:before{
+    background: url(http://icons.iconarchive.com/icons/aha-soft/large-time/16/Time-icon.png);
+}
+
+.deconstructed {
+    position: relative;
+    margin: auto;
+    height: 1.1em;
+    color: transparent;
+    font-family: 'Cambay', sans-serif;
+    font-size: 40;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+
+}
+
+.deconstructed > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ed3f3f;
+    pointer-events: none;
+    text-shadow: 0px 0px 5px black;
+}
+
+.deconstructed > div:nth-child(1) {
+    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+    mask-image: linear-gradient(black 25%, transparent 25%);
+    animation: deconstructed1 5s infinite;
+}
+
+.deconstructed > div:nth-child(2) {
+    -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    animation: deconstructed2 5s infinite;
+}
+
+.deconstructed > div:nth-child(3) {
+    -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    animation: deconstructed3 5s infinite;
+}
+
+.deconstructed > div:nth-child(4) {
+    -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+    mask-image: linear-gradient(transparent 75%, black 75%);
+    animation: deconstructed4 5s infinite;
+}
+
+@keyframes deconstructed1 {
+    0% {
+        transform: translateX(100%);
+    }
+    26% {
+        transform: translateX(0%);
+    }
+    83% {
+        transform: translateX(-0.1%);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+}
+
+@keyframes deconstructed2 {
+    0% {
+        transform: translateX(100%);
+    }
+    24% {
+        transform: translateX(0.5%);
+    }
+    82% {
+        transform: translateX(-0.2%);
+    }
+    100% {
+        transform: translateX(-125%);
+    }
+}
+
+@keyframes deconstructed3 {
+    0% {
+        transform: translateX(100%);
+    }
+    22% {
+        transform: translateX(0%);
+    }
+    81% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-130%);
+    }
+}
+
+@keyframes deconstructed4 {
+    0% {
+        transform: translateX(100%);
+    }
+    20% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-135%);
+    }
+}
+
+
+
+.neon {
+    position: relative;
+    overflow: hidden;
+    filter: brightness(200%);
+    display: inline-block;
+    width: 600px;
+}
+
+.text {
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    user-select: none;
+    font-size: 60px;
+    background: -webkit-linear-gradient(#dcdad9, #4f4f4f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.28);
+
+}
+
+.logare_membri{
+    display: inline-block!important;
+    width: 940px;
+    text-align: left;
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/conten12.png)!important;
+    background-repeat: repeat-y!important;
+    padding: 4px 20px;
+}
+
+.logare_membri span{
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+}
+
+a.logare{
+    float: right;
+    background: #95c24b;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.top_log{
+    display: inline-block;
+    width: 980px;;
+    height: 24px;
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/mainti13.png);
+    background-repeat: no-repeat;
+}
+
+.bottom_log{
+
+    background-image: url(https://i.servimg.com/u/f62/17/29/75/16/tfoot310.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    display: inline-block;
+    width: 980px;
+    background-position: bottom
+}
+
+
+.container {
+    width: 61.8%;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    /* margin-left: 15px; */
+    margin-left: 17px;
+    margin: 0px auto;
+    margin-top: 30px;
+    min-width: 1042px;
+    padding-right: 2px;
+    background-width: auto;
+    background-width: 768px;
+    background-repeat: repeat-y;
+    background-position: middle top;
+    background-color: transparent !important;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+}
