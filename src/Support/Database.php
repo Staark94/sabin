@@ -6,9 +6,9 @@ namespace SSYT\Support;
 class Database
 {
     public $dbh;
-    protected $dsn = 'mysql:dbname=sabin;host=127.0.0.1';
+    protected $dsn = 'mysql:dbname=$database;host=127.0.0.1';
     protected $user = 'root';
-    protected $password = 'loveme22@@';
+    protected $password = '';
 
     public function __construct()
     {
